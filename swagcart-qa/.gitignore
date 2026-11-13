@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+build/
+.npmrc
+
+# Personal QA local state
+.qa-profiles/
+.state/
+.venv/
+__pycache__/
+.pytest_cache/
+runtime/
+reports/failures/
+*.log

@@ -1,0 +1,14 @@
+.venv/
+**/node_modules/
+**/target/
+**/.state/
+**/.qa-profiles/
+**/__pycache__/
+**/.pytest_cache/
+**/runtime/
+tooling/wheels/
+tooling/drivers/
+tooling/apache-tomcat-*/
+tooling/apache-maven-*/
+tooling/maven-download-cache/
+*.log

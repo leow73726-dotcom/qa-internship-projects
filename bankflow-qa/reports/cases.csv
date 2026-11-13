@@ -1,0 +1,16 @@
+﻿test,result,seconds
+test_demo_login_and_account_contract,passed,0.649
+test_transfer_conserves_total_and_changes_both_balances[0.01],passed,0.308
+test_transfer_conserves_total_and_changes_both_balances[1],passed,0.293
+test_transfer_conserves_total_and_changes_both_balances[12.34],passed,0.158
+test_transfer_conserves_total_and_changes_both_balances[100],passed,0.140
+test_transfer_creates_matching_debit_and_credit_entries,passed,0.167
+test_decimal_deposits_are_exact,passed,0.142
+test_withdraw_changes_balance_by_exact_amount,passed,0.125
+test_transfer_policy_rejects_invalid_amount_without_writes[0],passed,0.236
+test_transfer_policy_rejects_invalid_amount_without_writes[-1],passed,0.170
+test_transfer_policy_rejects_invalid_amount_without_writes[0.001],passed,0.129
+test_same_account_transfer_is_rejected,passed,0.101
+test_missing_amount_is_rejected,passed,0.123
+test_failed_destination_rolls_back_debit_and_ledger,passed,0.115
+test_transaction_amount_filter,passed,0.094

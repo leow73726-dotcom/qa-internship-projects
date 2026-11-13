@@ -1,0 +1,196 @@
+{
+  "candidates": [
+    {
+      "name": "ClinicFlow QA · 诊所业务接口测试",
+      "url": "https://github.com/spring-petclinic/spring-petclinic-rest",
+      "license": "Apache-2.0",
+      "license_score": 4,
+      "stars": 639,
+      "last_commit": "2026-11-09",
+      "runnable": true,
+      "runnable_score": 20,
+      "resource_fit_score": 8,
+      "jd_match_score": 30,
+      "matched_jd_terms": [
+        "Python",
+        "Java",
+        "接口测试",
+        "回归测试",
+        "测试数据",
+        "缺陷复现",
+        "边界值分析"
+      ],
+      "compute": "本机 CPU，无 Docker/独立数据库要求",
+      "mod_ideas": [
+        "健康检查及接口文档可用",
+        "主人创建、查询、修改、删除后再查",
+        "非法电话号码返回 400 且不保存",
+        "姓名格式及长度边界"
+      ],
+      "risk_notes": [
+        "只验证本地 H2 默认配置，未验证 MySQL/PostgreSQL 或启用认证后的矩阵"
+      ],
+      "score": 93.27,
+      "raw_score": 97,
+      "max_raw_score": 104,
+      "score_breakdown": {
+        "jd_match": 30,
+        "license": 4,
+        "runnable": 20,
+        "resource_fit": 8,
+        "activity": 10,
+        "stars": 8,
+        "modification_space": 20,
+        "user_preference": 0,
+        "risk_penalty": -3
+      },
+      "matched_keywords": [
+        "Python",
+        "Java",
+        "接口测试",
+        "回归测试",
+        "测试数据",
+        "缺陷复现",
+        "边界值分析"
+      ],
+      "score_reasons": [
+        "JD match score from jd_match_score",
+        "license score from license_score",
+        "runnable score from runnable_score",
+        "resource fit score from resource_fit_score",
+        "active within 180 days",
+        "good community signal",
+        "4 modification ideas",
+        "1 risk notes"
+      ]
+    },
+    {
+      "name": "BankFlow QA · 银行交易接口与资金一致性测试",
+      "url": "https://github.com/parasoft/parabank",
+      "license": "Apache-2.0",
+      "license_score": 4,
+      "stars": 63,
+      "last_commit": "2026-11-11",
+      "runnable": true,
+      "runnable_score": 20,
+      "resource_fit_score": 8,
+      "jd_match_score": 30,
+      "matched_jd_terms": [
+        "Python",
+        "Java",
+        "接口测试",
+        "回归测试",
+        "测试数据",
+        "缺陷复现",
+        "金融业务"
+      ],
+      "compute": "本机 CPU，无 Docker/独立数据库要求",
+      "mod_ideas": [
+        "演示账号登录与账户结构正确",
+        "正常转账双方余额及总额正确",
+        "转账生成配对借贷流水",
+        "存款、取款十进制金额正确"
+      ],
+      "risk_notes": [
+        "金融演示系统，不代表真实金融生产经验",
+        "不使用上游可选的商业测试工具或相关许可配置"
+      ],
+      "score": 88.46,
+      "raw_score": 92,
+      "max_raw_score": 104,
+      "score_breakdown": {
+        "jd_match": 30,
+        "license": 4,
+        "runnable": 20,
+        "resource_fit": 8,
+        "activity": 10,
+        "stars": 6,
+        "modification_space": 20,
+        "user_preference": 0,
+        "risk_penalty": -6
+      },
+      "matched_keywords": [
+        "Python",
+        "Java",
+        "接口测试",
+        "回归测试",
+        "测试数据",
+        "缺陷复现",
+        "金融业务"
+      ],
+      "score_reasons": [
+        "JD match score from jd_match_score",
+        "license score from license_score",
+        "runnable score from runnable_score",
+        "resource fit score from resource_fit_score",
+        "active within 180 days",
+        "some community signal",
+        "4 modification ideas",
+        "2 risk notes"
+      ]
+    },
+    {
+      "name": "SwagCart QA · 电商页面自动化测试",
+      "url": "https://github.com/saucelabs/sample-app-web",
+      "license": "MIT",
+      "license_score": 4,
+      "stars": 46,
+      "last_commit": "2026-11-05",
+      "runnable": true,
+      "runnable_score": 20,
+      "resource_fit_score": 10,
+      "jd_match_score": 28,
+      "matched_jd_terms": [
+        "Python",
+        "Selenium",
+        "Pytest",
+        "功能测试",
+        "回归测试",
+        "测试环境"
+      ],
+      "compute": "本机 CPU，无 Docker/独立数据库要求",
+      "mod_ideas": [
+        "可登录并显示六个商品",
+        "空账号、空密码、错误账号、锁定账号应提示错误",
+        "按名称或价格升降序正确排序",
+        "购物车增删及刷新后状态正确"
+      ],
+      "risk_notes": [
+        "前端模拟业务，不覆盖真实支付和服务端鉴权",
+        "UI 自动化依赖 Chrome 与驱动版本匹配"
+      ],
+      "score": 85.58,
+      "raw_score": 89,
+      "max_raw_score": 104,
+      "score_breakdown": {
+        "jd_match": 28,
+        "license": 4,
+        "runnable": 20,
+        "resource_fit": 10,
+        "activity": 10,
+        "stars": 3,
+        "modification_space": 20,
+        "user_preference": 0,
+        "risk_penalty": -6
+      },
+      "matched_keywords": [
+        "Python",
+        "Selenium",
+        "Pytest",
+        "功能测试",
+        "回归测试",
+        "测试环境"
+      ],
+      "score_reasons": [
+        "JD match score from jd_match_score",
+        "license score from license_score",
+        "runnable score from runnable_score",
+        "resource fit score from resource_fit_score",
+        "active within 180 days",
+        "small community signal",
+        "4 modification ideas",
+        "2 risk notes"
+      ]
+    }
+  ]
+}

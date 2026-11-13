@@ -1,0 +1,11 @@
+{
+  "project": "bankflow-qa",
+  "tests": 15,
+  "passed": 15,
+  "failures": 0,
+  "errors": 0,
+  "timestamp": "2026-11-13T23:33:39.903210+08:00",
+  "environment": "Windows / Python 3.12 / Java 21 / Chrome 157.0.8103.78",
+  "scope": "new qa/ suite only; not all upstream tests",
+  "report_sha256": "677eca50c29b54cd5d8a0d807c02057f666f9ba2fb8dceaa801d278578727be1"
+}

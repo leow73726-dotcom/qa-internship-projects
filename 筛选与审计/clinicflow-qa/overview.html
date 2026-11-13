@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>clinicflow-qa 项目摸底报告</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; color: #18202a; background: #f6f7f9; }
+    main { max-width: 1080px; margin: 0 auto; padding: 32px 20px 56px; }
+    section { margin-top: 24px; }
+    h1, h2 { color: #111827; line-height: 1.2; }
+    h1 { font-size: 34px; margin: 4px 0 8px; }
+    h2 { font-size: 20px; margin: 0 0 12px; }
+    p, li { line-height: 1.65; }
+    .hero { background: #ffffff; border: 1px solid #d8dee8; border-radius: 8px; padding: 22px; }
+    .eyebrow { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: 0; color: #2563eb; text-transform: uppercase; }
+    .muted, .empty { color: #5b6778; }
+    .metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+    .metrics div { background: #ffffff; border: 1px solid #d8dee8; border-radius: 8px; padding: 16px; }
+    .metrics strong { display: block; font-size: 24px; color: #111827; }
+    .metrics span { color: #5b6778; font-size: 13px; }
+    .grid { display: grid; gap: 16px; }
+    .two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid > div, section:not(.hero):not(.metrics):not(.grid) { background: #ffffff; border: 1px solid #d8dee8; border-radius: 8px; padding: 18px; }
+    table { width: 100%; border-collapse: collapse; background: #ffffff; }
+    th, td { text-align: left; vertical-align: top; border-bottom: 1px solid #e5e9f0; padding: 9px 10px; font-size: 14px; white-space: pre-wrap; word-break: break-word; }
+    th { color: #334155; background: #eef2f7; }
+    pre { white-space: pre-wrap; word-break: break-word; background: #f8fafc; border: 1px solid #d8dee8; border-radius: 8px; padding: 12px; overflow-x: auto; }
+    code { color: #0f172a; }
+    li { margin: 4px 0; }
+    ul { padding-left: 20px; }
+    @media (max-width: 760px) { .metrics, .two, .three { grid-template-columns: 1fr; } main { padding: 18px 12px 36px; } }
+  </style>
+</head>
+<body>
+  <main>
+    
+    <section class="hero">
+      <p class="eyebrow">鼠鼠实习妙妙工具项目摸底报告</p>
+      <h1>clinicflow-qa</h1>
+      <p class="muted">C:\Users\ZhuanZ\Documents\Codex\2026-11-13\d\outputs\additional-qa-projects\clinicflow-qa</p>
+    </section>
+
+    <section class="metrics">
+      <div><strong>162</strong><span>Files scanned</span></div>
+      <div><strong>780990</strong><span>Approx bytes</span></div>
+      <div><strong>2</strong><span>Dependency clues</span></div>
+      <div><strong>33</strong><span>Test clues</span></div>
+    </section>
+
+    <section>
+      <h2>语言和文件类型</h2>
+      <div class="grid two">
+        <div><table><thead><tr><th>Language</th><th>Files</th></tr></thead><tbody><tr><td>Java</td><td>109</td></tr><tr><td>Other</td><td>39</td></tr><tr><td>SQL</td><td>8</td></tr><tr><td>YAML</td><td>3</td></tr><tr><td>Python</td><td>2</td></tr><tr><td>Shell</td><td>1</td></tr></tbody></table></div>
+        <div><table><thead><tr><th>Extension</th><th>Files</th></tr></thead><tbody><tr><td>.java</td><td>109</td></tr><tr><td>.properties</td><td>10</td></tr><tr><td>.md</td><td>9</td></tr><tr><td>.sql</td><td>8</td></tr><tr><td>.txt</td><td>4</td></tr><tr><td>[no extension]</td><td>3</td></tr><tr><td>.yml</td><td>3</td></tr><tr><td>.cmd</td><td>3</td></tr><tr><td>.xml</td><td>3</td></tr><tr><td>.json</td><td>3</td></tr><tr><td>.py</td><td>2</td></tr><tr><td>.png</td><td>1</td></tr><tr><td>.sh</td><td>1</td></tr><tr><td>.ini</td><td>1</td></tr><tr><td>.jar</td><td>1</td></tr></tbody></table></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>核心链路线索</h2>
+      <table><thead><tr><th>Category</th><th>Hit Count</th><th>Representative Paths</th></tr></thead><tbody><tr><td>api_backend</td><td>40</td><td>qa/test_clinic_api.py
+src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java
+src/main/java/org/springframework/samples/petclinic/config/SwaggerConfig.java
+src/main/java/org/springframework/samples/petclinic/mapper/OwnerMapper.java
+src/main/java/org/springframework/samples/petclinic/mapper/PetMapper.java
+src/main/java/org/springframework/samples/petclinic/mapper/PetTypeMapper.java
+src/main/java/org/springframework/samples/petclinic/mapper/SpecialtyMapper.java
+src/main/java/org/springframework/samples/petclinic/mapper/UserMapper.java
+src/main/java/org/springframework/samples/petclinic/mapper/VetMapper.java
+src/main/java/org/springframework/samples/petclinic/mapper/VisitMapper.java</td></tr><tr><td>config</td><td>6</td><td>.editorconfig
+src/main/java/org/springframework/samples/petclinic/config/SwaggerConfig.java
+src/main/java/org/springframework/samples/petclinic/security/BasicAuthenticationConfig.java
+src/main/java/org/springframework/samples/petclinic/security/DisableSecurityConfig.java
+src/test/java/org/springframework/samples/petclinic/SpringConfigTests.java
+src/test/java/org/springframework/samples/petclinic/service/clinicService/ApplicationTestConfig.java</td></tr><tr><td>database_state</td><td>40</td><td>petclinic-ermodel.png
+src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java
+src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java
+src/main/java/org/springframework/samples/petclinic/model/Owner.java
+src/main/java/org/springframework/samples/petclinic/model/Person.java
+src/main/java/org/springframework/samples/petclinic/model/Pet.java
+src/main/java/org/springframework/samples/petclinic/model/PetType.java
+src/main/java/org/springframework/samples/petclinic/model/Role.java
+src/main/java/org/springframework/samples/petclinic/model/Specialty.java
+src/main/java/org/springframework/samples/petclinic/model/User.java</td></tr><tr><td>devops_deploy</td><td>11</td><td>docker-compose.yml
+src/main/java/org/springframework/samples/petclinic/mapper/SpecialtyMapper.java
+src/main/java/org/springframework/samples/petclinic/model/Specialty.java
+src/main/java/org/springframework/samples/petclinic/repository/SpecialtyRepository.java
+src/main/java/org/springframework/samples/petclinic/repository/jdbc/JdbcSpecialtyRepositoryImpl.java
+src/main/java/org/springframework/samples/petclinic/repository/jpa/JpaSpecialtyRepositoryImpl.java
+src/main/java/org/springframework/samples/petclinic/repository/springdatajpa/SpecialtyRepositoryOverride.java
+src/main/java/org/springframework/samples/petclinic/repository/springdatajpa/SpringDataSpecialtyRepository.java
+src/main/java/org/springframework/samples/petclinic/repository/springdatajpa/SpringDataSpecialtyRepositoryImpl.java
+src/main/java/org/springframework/samples/petclinic/rest/controller/v1/SpecialtyRestControllerV1.java</td></tr><tr><td>evaluation</td><td>35</td><td>postman-tests.sh
+pytest.ini
+qa/conftest.py
+qa/test_clinic_api.py
+src/main/java/org/springframework/samples/petclinic/rest/validation/PetAgeValidation.java
+src/main/java/org/springframework/samples/petclinic/rest/validation/PetAgeValidator.java
+src/test/java/org/springframework/samples/petclinic/SpringConfigTests.java
+src/test/java/org/springframework/samples/petclinic/model/ValidatorTests.java
+src/test/java/org/springframework/samples/petclinic/rest/controller/OwnerRestControllerV1Tests.java
+src/test/java/org/springframework/samples/petclinic/rest/controller/PetRestControllerV1Tests.java</td></tr><tr><td>inference_demo</td><td>21</td><td>.mvn/wrapper/maven-wrapper.jar
+.mvn/wrapper/maven-wrapper.properties
+qa/test_clinic_api.py
+src/main/java/org/springframework/samples/petclinic/PetClinicApplication.java
+src/main/java/org/springframework/samples/petclinic/mapper/OwnerMapper.java
+src/main/java/org/springframework/samples/petclinic/mapper/PetMapper.java
+src/main/java/org/springframework/samples/petclinic/mapper/PetTypeMapper.java
+src/main/java/org/springframework/samples/petclinic/mapper/SpecialtyMapper.java
+src/main/java/org/springframework/samples/petclinic/mapper/UserMapper.java
+src/main/java/org/springframework/samples/petclinic/mapper/VetMapper.java</td></tr><tr><td>model</td><td>14</td><td>petclinic-ermodel.png
+src/main/java/org/springframework/samples/petclinic/model/BaseEntity.java
+src/main/java/org/springframework/samples/petclinic/model/NamedEntity.java
+src/main/java/org/springframework/samples/petclinic/model/Owner.java
+src/main/java/org/springframework/samples/petclinic/model/Person.java
+src/main/java/org/springframework/samples/petclinic/model/Pet.java
+src/main/java/org/springframework/samples/petclinic/model/PetType.java
+src/main/java/org/springframework/samples/petclinic/model/Role.java
+src/main/java/org/springframework/samples/petclinic/model/Specialty.java
+src/main/java/org/springframework/samples/petclinic/model/User.java</td></tr><tr><td>security_auth</td><td>3</td><td>src/main/java/org/springframework/samples/petclinic/model/Role.java
+src/main/java/org/springframework/samples/petclinic/security/BasicAuthenticationConfig.java
+src/main/java/org/springframework/samples/petclinic/security/Roles.java</td></tr><tr><td>testing_quality</td><td>40</td><td>postman-tests.sh
+pytest.ini
+qa/conftest.py
+qa/test_clinic_api.py
+src/main/java/org/springframework/samples/petclinic/mapper/SpecialtyMapper.java
+src/main/java/org/springframework/samples/petclinic/model/Specialty.java
+src/main/java/org/springframework/samples/petclinic/repository/SpecialtyRepository.java
+src/main/java/org/springframework/samples/petclinic/repository/jdbc/JdbcSpecialtyRepositoryImpl.java
+src/main/java/org/springframework/samples/petclinic/repository/jpa/JpaSpecialtyRepositoryImpl.java
+src/main/java/org/springframework/samples/petclinic/repository/springdatajpa/SpecialtyRepositoryOverride.java</td></tr></tbody></table>
+    </section>
+
+    <section class="grid two">
+      <div>
+        <h2>依赖和环境</h2>
+        <ul><li><code>docker-compose.yml</code></li><li><code>pom.xml</code></li></ul>
+      </div>
+      <div>
+        <h2>README</h2>
+        <ul><li><code>readme.md</code></li><li><code>src/test/jmeter/README.md</code></li><li><code>src/test/postman/README.md</code></li></ul>
+      </div>
+    </section>
+
+    <section class="grid three">
+      <div>
+        <h2>Notebooks</h2>
+        <p class="empty">无</p>
+      </div>
+      <div>
+        <h2>Docker</h2>
+        <ul><li><code>docker-compose.yml</code></li></ul>
+      </div>
+      <div>
+        <h2>Tests</h2>
+        <ul><li><code>postman-tests.sh</code></li><li><code>pytest.ini</code></li><li><code>qa/conftest.py</code></li><li><code>qa/test_clinic_api.py</code></li><li><code>src/test/java/org/springframework/samples/petclinic/SpringConfigTests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/model/ValidatorTests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/rest/controller/OwnerRestControllerV1Tests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/rest/controller/PetRestControllerV1Tests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/rest/controller/PetTypeRestControllerV1Tests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/rest/controller/SpecialtyRestControllerV1Tests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/rest/controller/UserRestControllerV1Tests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/rest/controller/V2RestControllersTests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/rest/controller/VetRestControllerV1Tests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/rest/controller/VisitRestControllerV1Tests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/service/clinicService/AbstractClinicServiceTests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/service/clinicService/ApplicationTestConfig.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/service/clinicService/ClinicServiceH2JdbcTests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/service/clinicService/ClinicServiceHsqlJdbcTests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/service/clinicService/ClinicServiceJpaTests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/service/clinicService/ClinicServiceSpringDataJpaTests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/service/userService/AbstractUserServiceTests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/service/userService/UserServiceH2JdbcTests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/service/userService/UserServiceHsqlJdbcTests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/service/userService/UserServiceJpaTests.java</code></li><li><code>src/test/java/org/springframework/samples/petclinic/service/userService/UserServiceSpringDataJpaTests.java</code></li></ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>潜在数据 / 状态 / 模型 / 资源路径</h2>
+      <ul><li><code>src/main/resources/db/h2/data.sql</code></li><li><code>src/main/resources/db/h2/schema.sql</code></li><li><code>src/main/resources/db/hsqldb/data.sql</code></li><li><code>src/main/resources/db/hsqldb/schema.sql</code></li><li><code>src/main/resources/db/mysql/data.sql</code></li><li><code>src/main/resources/db/mysql/petclinic_db_setup_mysql.txt</code></li><li><code>src/main/resources/db/mysql/schema.sql</code></li><li><code>src/main/resources/db/postgres/data.sql</code></li><li><code>src/main/resources/db/postgres/petclinic_db_setup_postgres.txt</code></li><li><code>src/main/resources/db/postgres/schema.sql</code></li></ul>
+    </section>
+
+    <section>
+      <h2>目录树摘要</h2>
+      <pre>clinicflow-qa/
+  .github/
+  .mvn/
+  docs/
+  qa/
+  src/
+  .editorconfig
+  .gitignore
+  LICENSE.txt
+  UPSTREAM.md
+  UPSTREAM_README.md
+  docker-compose.yml
+  mvnw
+  mvnw.cmd
+  petclinic-ermodel.png
+  pom.qa.xml
+  pom.xml
+  postman-tests.sh
+  pytest.ini
+  readme.md
+  start.cmd
+  terms.txt
+  test.cmd
+    dependabot.yml
+    wrapper/
+      maven-wrapper.jar
+      maven-wrapper.properties
+    Postman练习.md
+    代码与面试讲解.md
+    问题记录.md
+    需求与用例.md
+    conftest.py
+    postman.collection.json
+    test_clinic_api.py
+    main/
+    test/
+      java/
+      resources/
+      java/
+      jmeter/
+      postman/
+      resources/</pre>
+    </section>
+
+    <section>
+      <h2>下一步人工确认</h2>
+      <ul>
+        <li>找到最小可运行命令：API、页面、CLI、worker、测试、训练或 demo 至少一个。</li>
+        <li>确认依赖、环境变量、数据库/数据文件、端口和外部服务。</li>
+        <li>确认 baseline/demo 是否能在本地、Docker、云服务器或 GPU 环境上跑通。</li>
+        <li>确认自己的面试亮点：改造点、demo、测试、报告或实验计划。</li>
+      </ul>
+    </section>
+    
+  </main>
+</body>
+</html>

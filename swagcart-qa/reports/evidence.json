@@ -1,0 +1,11 @@
+{
+  "project": "swagcart-qa",
+  "tests": 16,
+  "passed": 16,
+  "failures": 0,
+  "errors": 0,
+  "timestamp": "2026-11-13T23:33:05.824287+08:00",
+  "environment": "Windows / Python 3.12 / Java 21 / Chrome 157.0.8103.78",
+  "scope": "new qa/ suite only; not all upstream tests",
+  "report_sha256": "0bb0f2728b7826896c67f003926f563db996af48aef2ca733825d883926c85f2"
+}

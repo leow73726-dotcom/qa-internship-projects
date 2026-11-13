@@ -1,0 +1,11 @@
+{
+  "project": "clinicflow-qa",
+  "tests": 23,
+  "passed": 23,
+  "failures": 0,
+  "errors": 0,
+  "timestamp": "2026-11-13T23:33:16.633928+08:00",
+  "environment": "Windows / Python 3.12 / Java 21 / Chrome 157.0.8103.78",
+  "scope": "new qa/ suite only; not all upstream tests",
+  "report_sha256": "cda6c0a9c0488973fda2fb1c8572545551d889403f85c68677a6c5eb3f955626"
+}

@@ -1,0 +1,31 @@
+{
+  "name": "swagcart-qa",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=24.9.0"
+  },
+  "scripts": {
+    "start": "vite --host 127.0.0.1 --port 3200 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 3200 --strictPort"
+  },
+  "dependencies": {
+    "@backtrace/react": "^0.5.1",
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^3.3.1",
+    "@react-pdf/renderer": "^4.5.1",
+    "js-cookie": "^3.0.8",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
+    "react-burger-menu": "^3.0.6",
+    "react-router-dom": "^7.18.3"
+  },
+  "devDependencies": {
+    "vite": "^8.3.5",
+    "@vitejs/plugin-react": "^6.0.3",
+    "prop-types": "^15.7.2"
+  }
+}

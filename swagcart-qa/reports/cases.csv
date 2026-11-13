@@ -1,0 +1,17 @@
+﻿test,result,seconds
+test_login_and_inventory,passed,7.209
+test_login_errors[-secret_sauce-Username is required],passed,6.677
+test_login_errors[standard_user--Password is required],passed,6.455
+test_login_errors[unknown-wrong-do not match],passed,5.972
+test_login_errors[locked_out_user-secret_sauce-locked out],passed,5.948
+test_sorting[az-False-False],passed,6.369
+test_sorting[za-True-False],passed,5.734
+test_sorting[lohi-False-True],passed,5.710
+test_sorting[hilo-True-True],passed,6.061
+test_add_remove_and_reload_cart,passed,6.345
+test_checkout_required_fields[-Student-100000-First Name],passed,5.949
+test_checkout_required_fields[Test--100000-Last Name],passed,5.802
+test_checkout_required_fields[Test-Student--Postal Code],passed,6.484
+test_checkout_totals_and_cart_cleared[Test-Student],passed,7.369
+test_checkout_totals_and_cart_cleared[\u6d4b\u8bd5-\u540c\u5b66],passed,6.620
+test_anonymous_inventory_redirects_to_login,passed,5.152

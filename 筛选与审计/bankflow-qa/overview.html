@@ -1,0 +1,257 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>bankflow-qa 项目摸底报告</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; color: #18202a; background: #f6f7f9; }
+    main { max-width: 1080px; margin: 0 auto; padding: 32px 20px 56px; }
+    section { margin-top: 24px; }
+    h1, h2 { color: #111827; line-height: 1.2; }
+    h1 { font-size: 34px; margin: 4px 0 8px; }
+    h2 { font-size: 20px; margin: 0 0 12px; }
+    p, li { line-height: 1.65; }
+    .hero { background: #ffffff; border: 1px solid #d8dee8; border-radius: 8px; padding: 22px; }
+    .eyebrow { margin: 0; font-size: 12px; font-weight: 700; letter-spacing: 0; color: #2563eb; text-transform: uppercase; }
+    .muted, .empty { color: #5b6778; }
+    .metrics { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+    .metrics div { background: #ffffff; border: 1px solid #d8dee8; border-radius: 8px; padding: 16px; }
+    .metrics strong { display: block; font-size: 24px; color: #111827; }
+    .metrics span { color: #5b6778; font-size: 13px; }
+    .grid { display: grid; gap: 16px; }
+    .two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid > div, section:not(.hero):not(.metrics):not(.grid) { background: #ffffff; border: 1px solid #d8dee8; border-radius: 8px; padding: 18px; }
+    table { width: 100%; border-collapse: collapse; background: #ffffff; }
+    th, td { text-align: left; vertical-align: top; border-bottom: 1px solid #e5e9f0; padding: 9px 10px; font-size: 14px; white-space: pre-wrap; word-break: break-word; }
+    th { color: #334155; background: #eef2f7; }
+    pre { white-space: pre-wrap; word-break: break-word; background: #f8fafc; border: 1px solid #d8dee8; border-radius: 8px; padding: 12px; overflow-x: auto; }
+    code { color: #0f172a; }
+    li { margin: 4px 0; }
+    ul { padding-left: 20px; }
+    @media (max-width: 760px) { .metrics, .two, .three { grid-template-columns: 1fr; } main { padding: 18px 12px 36px; } }
+  </style>
+</head>
+<body>
+  <main>
+    
+    <section class="hero">
+      <p class="eyebrow">鼠鼠实习妙妙工具项目摸底报告</p>
+      <h1>bankflow-qa</h1>
+      <p class="muted">C:\Users\ZhuanZ\Documents\Codex\2026-11-13\d\outputs\additional-qa-projects\bankflow-qa</p>
+    </section>
+
+    <section class="metrics">
+      <div><strong>468</strong><span>Files scanned</span></div>
+      <div><strong>11075412</strong><span>Approx bytes</span></div>
+      <div><strong>2</strong><span>Dependency clues</span></div>
+      <div><strong>60</strong><span>Test clues</span></div>
+    </section>
+
+    <section>
+      <h2>语言和文件类型</h2>
+      <div class="grid two">
+        <div><table><thead><tr><th>Language</th><th>Files</th></tr></thead><tbody><tr><td>Java</td><td>274</td></tr><tr><td>Other</td><td>172</td></tr><tr><td>Shell</td><td>10</td></tr><tr><td>SQL</td><td>7</td></tr><tr><td>Python</td><td>2</td></tr><tr><td>JavaScript</td><td>2</td></tr><tr><td>YAML</td><td>1</td></tr></tbody></table></div>
+        <div><table><thead><tr><th>Extension</th><th>Files</th></tr></thead><tbody><tr><td>.java</td><td>274</td></tr><tr><td>.jsp</td><td>44</td></tr><tr><td>.xml</td><td>17</td></tr><tr><td>.gif</td><td>17</td></tr><tr><td>[no extension]</td><td>14</td></tr><tr><td>.properties</td><td>10</td></tr><tr><td>.bat</td><td>10</td></tr><tr><td>.sh</td><td>10</td></tr><tr><td>.md</td><td>8</td></tr><tr><td>.sql</td><td>7</td></tr><tr><td>.png</td><td>6</td></tr><tr><td>.tst</td><td>5</td></tr><tr><td>.jpg</td><td>5</td></tr><tr><td>.pmpdd</td><td>4</td></tr><tr><td>.pva</td><td>4</td></tr></tbody></table></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>核心链路线索</h2>
+      <table><thead><tr><th>Category</th><th>Hit Count</th><th>Representative Paths</th></tr></thead><tbody><tr><td>api_backend</td><td>40</td><td>soatest/TestAssets/PB-ParabankServices-v3.tst
+soatest/VirtualAssets/Loan Approval Services-Proxy.pmpdd
+soatest/VirtualAssets/REST Service-Proxy.pmpdd
+soatest/VirtualAssets/SOAP Services-Proxy.pmpdd
+soatest/VirtualAssets/recorded_traffic/Loan_Approval_Services_2016-09-22_15-31-50-422.txt
+soatest/VirtualAssets/recorded_traffic/REST_Service_2016-09-22_15-31-46-297.txt
+src/main/assembly/sources-jst_web.xml
+src/main/java/com/parasoft/bookstore/Book.java
+src/main/java/com/parasoft/bookstore/BookStoreDB.java
+src/main/java/com/parasoft/bookstore/BookStoreMemoryDB.java</td></tr><tr><td>config</td><td>6</td><td>soatest/templatesettings.properties
+src/main/java/com/parasoft/parabank/domain/logic/impl/ConfigurableLoanProvider.java
+src/main/java/com/parasoft/parabank/service/ParaBankServiceConfiguration.java
+src/main/webapp/WEB-INF/swagger.yaml
+src/test/java/com/parasoft/parabank/service/ParaBankServiceConfigurationTest.java
+src/test/java/com/parasoft/parabank/test/util/LoanRequestTestConfig.java</td></tr><tr><td>database_state</td><td>40</td><td>src/main/java/com/parasoft/bookstore/BookStoreDB.java
+src/main/java/com/parasoft/bookstore/BookStoreMemoryDB.java
+src/main/java/com/parasoft/bookstore/DB.java
+src/main/java/com/parasoft/bookstore/jdbc/JdbcBookstoreDao.java
+src/main/java/com/parasoft/bookstore2/BookStoreDB.java
+src/main/java/com/parasoft/bookstore2/BookStoreMemoryDB.java
+src/main/java/com/parasoft/bookstore2/DB.java
+src/main/java/com/parasoft/parabank/dao/AccountDao.java
+src/main/java/com/parasoft/parabank/dao/AdminDao.java
+src/main/java/com/parasoft/parabank/dao/CustomerDao.java</td></tr><tr><td>devops_deploy</td><td>6</td><td>Dockerfile
+deploy-jtest-monitor.bat
+deploy-jtest-monitor.sh
+deploy.bat
+soatest/docker/soatestcli
+src/test/resources/url-ref/InsufficientFunds.xml</td></tr><tr><td>evaluation</td><td>40</td><td>deploy-jtest-monitor.bat
+deploy-jtest-monitor.sh
+jtest-ft-cov.bat
+jtest-ft-cov.sh
+jtest-mt-cov.bat
+jtest-mt-cov.sh
+jtest-sa-ut-delta.bat
+jtest-sa-ut-delta.sh
+jtest-sa-ut.bat
+jtest-sa-ut.sh</td></tr><tr><td>frontend_mobile</td><td>40</td><td>soatest/Bookstore/.parasoft
+soatest/Bookstore/.project
+soatest/Bookstore/PB-Bookstore1.tst
+soatest/Bookstore/PB-Bookstore2.tst
+soatest/TestAssets/keystores/soatest.pfx
+src/main/java/com/parasoft/bookstore/Book.java
+src/main/java/com/parasoft/bookstore/BookStoreDB.java
+src/main/java/com/parasoft/bookstore/BookStoreMemoryDB.java
+src/main/java/com/parasoft/bookstore/CartManager.java
+src/main/java/com/parasoft/bookstore/CartService.java</td></tr><tr><td>inference_demo</td><td>40</td><td>soatest/ApplicationCoverage.properties
+soatest/VirtualAssets/Loan Approval Services-Proxy.pmpdd
+soatest/VirtualAssets/recorded_traffic/Loan_Approval_Services_2016-09-22_15-31-50-422.txt
+src/main/java/com/parasoft/parabank/util/ServerBean.java
+src/main/resources/applicationContext-base.xml
+src/main/resources/applicationContext-hsqldb.xml
+src/main/resources/applicationContext-jms.xml
+src/main/resources/applicationContext.xml
+src/main/webapp/WEB-INF/jsp/content/about.jsp
+src/main/webapp/WEB-INF/jsp/content/activity.jsp</td></tr><tr><td>security_auth</td><td>1</td><td>src/main/java/com/parasoft/parabank/web/controller/exception/AuthenticationException.java</td></tr><tr><td>testing_quality</td><td>40</td><td>deploy-jtest-monitor.bat
+deploy-jtest-monitor.sh
+jtest-ft-cov.bat
+jtest-ft-cov.sh
+jtest-mt-cov.bat
+jtest-mt-cov.sh
+jtest-sa-ut-delta.bat
+jtest-sa-ut-delta.sh
+jtest-sa-ut.bat
+jtest-sa-ut.sh</td></tr></tbody></table>
+    </section>
+
+    <section class="grid two">
+      <div>
+        <h2>依赖和环境</h2>
+        <ul><li><code>Dockerfile</code></li><li><code>pom.xml</code></li></ul>
+      </div>
+      <div>
+        <h2>README</h2>
+        <ul><li><code>README.md</code></li><li><code>src/main/scripts/README.md</code></li></ul>
+      </div>
+    </section>
+
+    <section class="grid three">
+      <div>
+        <h2>Notebooks</h2>
+        <p class="empty">无</p>
+      </div>
+      <div>
+        <h2>Docker</h2>
+        <ul><li><code>Dockerfile</code></li><li><code>soatest/docker/soatestcli</code></li></ul>
+      </div>
+      <div>
+        <h2>Tests</h2>
+        <ul><li><code>deploy-jtest-monitor.bat</code></li><li><code>deploy-jtest-monitor.sh</code></li><li><code>jtest-ft-cov.bat</code></li><li><code>jtest-ft-cov.sh</code></li><li><code>jtest-mt-cov.bat</code></li><li><code>jtest-mt-cov.sh</code></li><li><code>jtest-sa-ut-delta.bat</code></li><li><code>jtest-sa-ut-delta.sh</code></li><li><code>jtest-sa-ut.bat</code></li><li><code>jtest-sa-ut.sh</code></li><li><code>jtest-security-sa.bat</code></li><li><code>pytest.ini</code></li><li><code>qa/conftest.py</code></li><li><code>qa/test_bank_transactions.py</code></li><li><code>soatest.bat</code></li><li><code>soatest.sh</code></li><li><code>soatest/TestAssets/keystores/soatest.pfx</code></li><li><code>soatest/docker/soatestcli</code></li><li><code>src/main/resources/com/parasoft/bookstore/resources/soatest.pfx</code></li><li><code>src/main/webapp/soatest.pfx</code></li><li><code>src/test/java/com/parasoft/bookstore/AbstractCartService.java</code></li><li><code>src/test/java/com/parasoft/bookstore/CartServiceTest.java</code></li><li><code>src/test/java/com/parasoft/bookstore2/AbstractCartService.java</code></li><li><code>src/test/java/com/parasoft/bookstore2/CartServiceTest.java</code></li><li><code>src/test/java/com/parasoft/bookstore2/OrderTest.java</code></li></ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>潜在数据 / 状态 / 模型 / 资源路径</h2>
+      <ul><li><code>src/main/webapp/schemas/cust.xsd</code></li></ul>
+    </section>
+
+    <section>
+      <h2>目录树摘要</h2>
+      <pre>bankflow-qa/
+  docs/
+  qa/
+  soatest/
+  src/
+  .classpath
+  .gitignore
+  .project
+  Dockerfile
+  LICENSE
+  README.md
+  Security Rules.properties
+  UPSTREAM.md
+  UPSTREAM_README.md
+  deploy-jtest-monitor.bat
+  deploy-jtest-monitor.sh
+  deploy.bat
+  jtest-ft-cov.bat
+  jtest-ft-cov.sh
+  jtest-mt-cov.bat
+  jtest-mt-cov.sh
+  jtest-sa-ut-delta.bat
+  jtest-sa-ut-delta.sh
+  jtest-sa-ut.bat
+  jtest-sa-ut.sh
+  jtest-security-sa.bat
+  parabank.launch
+  pom.qa.xml
+  pom.xml
+  pytest.ini
+  renovate.json
+  selenic.bat
+  selenic.sh
+  set-vars.bat
+  set-vars.sh
+  soatest.bat
+  soatest.sh
+  start.cmd
+  test.cmd
+    Postman练习.md
+    代码与面试讲解.md
+    问题记录.md
+    需求与用例.md
+    conftest.py
+    postman.collection.json
+    test_bank_transactions.py
+    Bookstore/
+    TestAssets/
+    VirtualAssets/
+    docker/
+    ApplicationCoverage.properties
+    templatesettings.properties
+      .parasoft
+      .project
+      PB-Bookstore1.tst
+      PB-Bookstore2.tst
+      keystores/
+      system_jars/
+      .parasoft
+      .project
+      PB-ParabankServices-v3.tst
+      PB-WebUI-v3.tst
+      Smoke.tst
+      LoanProcessor/
+      recorded_traffic/
+      .project
+      Loan Approval Services-Proxy.pmpdd
+      REST Service-Proxy.pmpdd
+      SOAP Services-Proxy.pmpdd
+      VirtualAssets.xml
+      admin.pmpdd
+      soatestcli
+    main/
+    test/
+      assembly/
+      java/
+      resources/
+      scripts/
+      webapp/
+      java/
+      resources/</pre>
+    </section>
+
+    <section>
+      <h2>下一步人工确认</h2>
+      <ul>
+        <li>找到最小可运行命令：API、页面、CLI、worker、测试、训练或 demo 至少一个。</li>
+        <li>确认依赖、环境变量、数据库/数据文件、端口和外部服务。</li>
+        <li>确认 baseline/demo 是否能在本地、Docker、云服务器或 GPU 环境上跑通。</li>
+        <li>确认自己的面试亮点：改造点、demo、测试、报告或实验计划。</li>
+      </ul>
+    </section>
+    
+  </main>
+</body>
+</html>
